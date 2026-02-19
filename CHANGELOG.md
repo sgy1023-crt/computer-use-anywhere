@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.0] - 2025-02-18
+## [2.0.0] - 2026-02-18
 ### Major Changes
 - **Universal Compatibility Mode**: Switched from Anthropic Beta Tools (`computer_20250124`) to **Standard Function Tools** (OpenAI-compatible) to fix OpenRouter compatibility issues.
 - **Model Standard**: Locked to `anthropic/claude-sonnet-4.6` for best performance.
@@ -20,3 +20,4 @@
 ### Removed
 - Removed dependency on `anthropic` SDK (now uses raw `httpx`).
 - Removed support for `xiaojingai.com` (replaced by OpenRouter).
+
