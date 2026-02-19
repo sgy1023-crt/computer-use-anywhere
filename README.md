@@ -117,7 +117,8 @@ Author tested: asked it to find the local browser and open it to search for a ke
 Every action requires a screenshot, every screenshot costs tokens, tokens cost money.
 
 Suggestion: **Use it for learning, not production.** For real automation, there are much more cost-effective alternatives out there.
-
+![API调用日志](./screenshots/log.png)
+![费用统计](./screenshots/cost.png)
 ## ⚠️ 注意 / Note
 本项目不需要安装 `anthropic` 官方库，直接使用 `httpx` 发送原始 HTTP 请求。
 This project does NOT require the `anthropic` SDK. It uses raw `httpx` HTTP requests instead.
