@@ -34,13 +34,13 @@ It lets Claude use the official Computer Use feature, see your screen via screen
 
 ## 💡 为什么要做这个 / Why build this?
 
-官方的 Claude Computer Use 只有 Docker/Linux 版本，Windows 用户很难上手。并且最近官方发布了Claude Sonnet 4.6模型，在Claude Computer Use上的功能有了很大的提升，Sonnet 4.6 在 OSWorld 上是 72.5%。为了用这个最新模型体验最新的computer_20250124 beta 工具协议操作电脑的功能，则开始研究本项目。这个项目的初衷只是为了技术学习，并不是为了生产使用。
+官方的 Claude Computer Use 只有 Docker/Linux 版本，Windows 用户很难上手。并且最近官方发布了Claude Sonnet 4.6模型，在Claude Computer Use上的功能有了很大的提升，Sonnet 4.6 在 OSWorld 上是 72.5%。为了用这个最新模型体验最新的computer_20250124 beta 工具协议可以实现的操作电脑的等效功能，则开始研究本项目。这个项目的初衷只是为了技术学习，并不是为了生产使用。
 
 另外发现了一个坑：**OpenRouter 目前不支持 Anthropic 的 beta Computer Use 工具类型**（会直接报错或被忽略）。
 
 所以用标准 function calling 重新实现了一遍，绕过了这个限制，让任何支持 function calling 的中转站都能用。
 
-The official Claude Computer Use only has Docker/Linux support, making it hard for Windows users. Anthropic recently released Claude Sonnet 4.6 with major improvements to Computer Use — achieving 72.5% on OSWorld benchmarks. This project was started to experience the latest computer_20250124 beta tool protocol with this newest model. The goal is purely technical learning, not production use.
+The official Claude Computer Use only has Docker/Linux support, making it hard for Windows users. Anthropic recently released Claude Sonnet 4.6 with major improvements to Computer Use — achieving 72.5% on OSWorld benchmarks. This project was started to experience the equivalent computer control capabilities of the latest computer_20250124 beta tool protocol using this newest model. The goal is purely technical learning, not production use.
 
 Also discovered a key issue: **OpenRouter does NOT currently support Anthropic's beta Computer Use tool types** (returns errors or ignores them).
 
