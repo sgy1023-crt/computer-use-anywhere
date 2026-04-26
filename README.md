@@ -46,7 +46,7 @@
 ## 运行
 
 ```powershell
-python h:\python\claude-computer-use-proxy\run.py
+python h:\python\computer-use-anywhere\run.py（类似这种，换成你自己的路径）
 ```
 
 如果你的 `python` 不在 PATH，就换成你本机能正常打开 Tk 界面的 Python 路径。
@@ -70,26 +70,26 @@ python -m pip install pyinstaller
 默认打包为更稳定的文件夹版；加 `-Zip` 会同时生成便携压缩包：
 
 ```powershell
-powershell.exe -ExecutionPolicy Bypass -File h:\python\claude-computer-use-proxy\scripts\build_exe.ps1 -Zip
+powershell.exe -ExecutionPolicy Bypass -File h:\python\computer-use-anywhere\scripts\build_exe.ps1 -Zip（类似这种）
 ```
 
-产物位置：
+产物位置（类似这种）：
 
 ```text
-h:\python\claude-computer-use-proxy\dist\ClaudeComputerUseProxy\ClaudeComputerUseProxy.exe
-h:\python\claude-computer-use-proxy\dist\ClaudeComputerUseProxy-portable.zip
+h:\python\claude-computer-use-proxy\dist\computer-use-anywhere\ClaudeComputerUseProxy.exe
+h:\python\claude-computer-use-proxy\dist\computer-use-anywhere-portable.zip
 ```
 
 如果没有安装 PyInstaller，也可以让脚本自动安装：
 
 ```powershell
-powershell.exe -ExecutionPolicy Bypass -File h:\python\claude-computer-use-proxy\scripts\build_exe.ps1 -InstallMissing -Zip
+powershell.exe -ExecutionPolicy Bypass -File h:\python\computer-use-anywhere\scripts\build_exe.ps1 -InstallMissing -Zip（类似这种）
 ```
 
 如果一定要单文件版：
 
 ```powershell
-powershell.exe -ExecutionPolicy Bypass -File h:\python\claude-computer-use-proxy\scripts\build_exe.ps1 -OneFile -Zip
+powershell.exe -ExecutionPolicy Bypass -File h:\python\computer-use-anywhere\scripts\build_exe.ps1 -OneFile -Zip（类似这种）
 ```
 
 EXE 运行时会把 `settings.json` 和 `sessions` 写在 EXE 所在目录旁边，方便复制和排查。
@@ -98,7 +98,7 @@ EXE 运行时会把 `settings.json` 和 `sessions` 写在 EXE 所在目录旁边
 
 ```powershell
 $env:PYTHONPATH='h:\python\claude-computer-use-proxy\src'
-& 'C:\Users\SGY\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -m unittest discover -s 'h:\python\claude-computer-use-proxy\tests' -v
+& 'C:\Users\用户\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -m unittest discover -s 'h:\python\claude-computer-use-proxy\tests' -v
 ```
 
 ## 说明
