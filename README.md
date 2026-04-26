@@ -97,7 +97,7 @@ EXE 运行时会把 `settings.json` 和 `sessions` 写在 EXE 所在目录旁边
 ## 测试
 
 ```powershell
-$env:PYTHONPATH='h:\python\claude-computer-use-proxy\src'
+$env:PYTHONPATH='h:\python\computer-use-anywhere\src'
 & 'C:\Users\用户\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -m unittest discover -s 'h:\python\claude-computer-use-proxy\tests' -v
 ```
 
