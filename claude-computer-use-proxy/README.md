@@ -46,7 +46,7 @@
 ## 运行
 
 ```powershell
-python h:\python\claude-computer-use-proxy\run.py
+python h:\python\claude-computer-use-proxy\run.py（类似这种）
 ```
 
 如果你的 `python` 不在 PATH，就换成你本机能正常打开 Tk 界面的 Python 路径。
@@ -73,7 +73,7 @@ python -m pip install pyinstaller
 powershell.exe -ExecutionPolicy Bypass -File h:\python\claude-computer-use-proxy\scripts\build_exe.ps1 -Zip
 ```
 
-产物位置：
+产物位置（类似）：
 
 ```text
 h:\python\claude-computer-use-proxy\dist\ClaudeComputerUseProxy\ClaudeComputerUseProxy.exe
